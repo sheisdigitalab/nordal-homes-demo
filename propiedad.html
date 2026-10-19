@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es" data-title-en="Property details | Nordal Homes (demo)">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ficha de propiedad | Nordal Homes (demo)</title>
+<meta name="description" content="Ficha de propiedad de la demo de Nordal Homes.">
+<!-- Demo ficticia: no indexar -->
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ficha de propiedad | Nordal Homes (demo)">
+<meta property="og:description" content="Ficha de propiedad de la demo de Nordal Homes.">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="theme-color" content="#14202C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+<a class="skip" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+<aside aria-label="Aviso de demo" class="banner-wrap"><div class="banner"><span data-es="Demo ficticia: web de ejemplo para inmobiliarias. Empresa, personas, cifras y opiniones son inventadas." data-en="Fictional demo: sample website for real estate agencies. Company, people, figures and reviews are made up.">Demo ficticia: web de ejemplo para inmobiliarias. Empresa, personas, cifras y opiniones son inventadas.</span> <a href="https://sheisdigitalab.com" data-es="¿Quieres una web así? She is Digital Lab" data-en="Want a website like this? She is Digital Lab">¿Quieres una web así? She is Digital Lab</a></div></aside>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="index.html" aria-label="Nordal Homes, inicio">NORDAL<span>HOMES</span></a>
+    <button class="burger" aria-expanded="false" aria-controls="menu" data-es="Menú" data-en="Menu">Menú</button>
+    <nav aria-label="Principal" style="display:contents">
+      <ul class="menu" id="menu">
+        <li><a href="gestion.html" data-es="Gestión" data-en="Management">Gestión</a></li>
+        <li><a href="alquilar.html" data-es="Alquilar" data-en="Rent">Alquilar</a></li>
+        <li><a href="vender.html" data-es="Vender" data-en="Sell">Vender</a></li>
+        <li><a href="propiedades.html" aria-current="page" data-es="Propiedades" data-en="Properties">Propiedades</a></li>
+        <li><a href="invertir.html" >Nordal 360</a></li>
+        <li><a href="index.html#nosotros" data-es="Nosotros" data-en="About">Nosotros</a></li>
+        <li><a href="index.html#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button aria-pressed="true" data-lang="es" lang="es">ES</button>
+      <button aria-pressed="false" data-lang="en" lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Migas de pan"><a href="index.html" data-es="Inicio" data-en="Home">Inicio</a> / <a href="propiedades.html" data-es="Propiedades" data-en="Properties">Propiedades</a> / <span id="crumb"></span></nav>
+    <div class="gallery" id="galeria"></div>
+    <div class="detail">
+      <article>
+        <h1 id="f-titulo"></h1>
+        <p class="price" id="f-precio"></p>
+        <div class="facts" id="f-datos"></div>
+        <h2 data-es="Descripción" data-en="Description">Descripción</h2>
+        <p id="f-desc"></p>
+        <h2 data-es="Características" data-en="Features">Características</h2>
+        <ul class="feat" id="f-feat"></ul>
+      </article>
+      <aside class="aside" aria-label="Contacto">
+        <h2 data-es="¿Te interesa este inmueble?" data-en="Interested in this property?">¿Te interesa este inmueble?</h2>
+        <form style="padding:0;gap:18px">
+          <div class="field"><label class="fl" for="p-nom" data-es="Nombre" data-en="Name">Nombre</label><input id="p-nom" name="p-nom" type="text" required autocomplete="name"></div>
+          <div class="field"><label class="fl" for="p-tel" data-es="Teléfono" data-en="Phone">Teléfono</label><input id="p-tel" name="p-tel" type="tel" required autocomplete="tel"></div>
+          <label class="consent"><input type="checkbox" required><span data-es="Acepto la <a href='#'>política de privacidad</a>." data-en="I accept the <a href='#'>privacy policy</a>.">Acepto la <a href="#">política de privacidad</a>.</span></label>
+          <button class="btn solid" type="submit" data-es="Solicitar información" data-en="Request information">Solicitar información</button>
+        </form>
+        <a class="btn" id="f-wa" href="https://wa.me/34600000000" data-es="Consultar por WhatsApp" data-en="Ask via WhatsApp">Consultar por WhatsApp</a>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><strong>Nordal Homes</strong><span data-es="Gestión, alquiler, compraventa e inversión inmobiliaria en Barcelona." data-en="Property management, rental, sales and real estate investment in Barcelona.">Gestión, alquiler, compraventa e inversión inmobiliaria en Barcelona.</span></div>
+      <nav aria-label="Pie"><strong data-es="Navegación" data-en="Navigation">Navegación</strong><a href="gestion.html" data-es="Gestión" data-en="Management">Gestión</a><a href="alquilar.html" data-es="Alquilar" data-en="Rent">Alquilar</a><a href="vender.html" data-es="Vender" data-en="Sell">Vender</a><a href="propiedades.html" data-es="Propiedades" data-en="Properties">Propiedades</a><a href="invertir.html">Nordal 360</a><a href="index.html#contacto" data-es="Contacto" data-en="Contact">Contacto</a></nav>
+      <nav aria-label="Legal"><strong>Legal</strong><a href="#" data-es="Política de privacidad" data-en="Privacy policy">Política de privacidad</a><a href="#" data-es="Política de cookies" data-en="Cookie policy">Política de cookies</a><a href="#" data-es="Aviso legal" data-en="Legal notice">Aviso legal</a></nav>
+    </div>
+    <p class="copy" data-es="© Nordal Homes · Demo ficticia creada por <a href='https://sheisdigitalab.com'>She is Digital Lab</a>" data-en="© Nordal Homes · Fictional demo created by <a href='https://sheisdigitalab.com'>She is Digital Lab</a>">© Nordal Homes · Demo ficticia creada por <a href="https://sheisdigitalab.com">She is Digital Lab</a></p>
+  </div>
+</footer>
+
+<aside aria-label="Contacto rápido"><a class="wa" href="https://wa.me/34600000000" aria-label="WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2z"/></svg>
+  <span>WhatsApp</span>
+</a></aside>
+
+<div class="cookie" role="region" aria-label="Cookies">
+  <p data-es="Utilizamos cookies propias y de terceros para analizar el uso de la web. Puedes aceptarlas, rechazarlas o consultar la <a href='#'>política de cookies</a>." data-en="We use our own and third party cookies to analyse site usage. You can accept, reject or read the <a href='#'>cookie policy</a>.">Utilizamos cookies propias y de terceros para analizar el uso de la web. Puedes aceptarlas, rechazarlas o consultar la <a href='#'>política de cookies</a>.</p>
+  <div class="acts">
+    <button class="btn" data-c="reject" data-es="Rechazar" data-en="Reject">Rechazar</button>
+    <button class="btn solid" data-c="accept" data-es="Aceptar" data-en="Accept">Aceptar</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="app.js?v=4"></script>
+<script src="datos.js?v=4"></script>
+<script src="cinematic.js?v=4"></script>
+</body>
+</html>
