@@ -10,10 +10,10 @@
     $$('[data-ph-'+l+']').forEach(function(e){e.placeholder=e.getAttribute('data-ph-'+l)});
     $$('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===l)});
     document.title=titles[l];
-    store('uma-lang',l);
+    store('nordal-lang',l);
   }
   $$('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang)})});
-  var saved=store('uma-lang');
+  var saved=store('nordal-lang');
   if(saved==='en')setLang('en');
 
   var burger=document.querySelector('.burger'),menu=document.querySelector('.menu');
@@ -32,9 +32,9 @@
   var ck=document.querySelector('.cookie');
   if(ck){
     var framed=false;try{framed=window.self!==window.top}catch(e){framed=true}
-    if(framed||location.search.indexOf('shot')>-1||store('uma-cookies')){ck.hidden=true}else{document.body.classList.add('has-cookie')}
+    if(framed||location.search.indexOf('shot')>-1||store('nordal-cookies')){ck.hidden=true}else{document.body.classList.add('has-cookie')}
     $$('.cookie [data-c]').forEach(function(b){b.addEventListener('click',function(){
-      store('uma-cookies',b.dataset.c);ck.hidden=true;document.body.classList.remove('has-cookie');
+      store('nordal-cookies',b.dataset.c);ck.hidden=true;document.body.classList.remove('has-cookie');
     })});
   }
   $$('form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();if(f.dataset.goto){location.hash=f.dataset.goto}})});
@@ -59,10 +59,10 @@
   if(!framed)return;
   window.addEventListener('message',function(e){
     var d=e.data;
-    if(d&&typeof d.umaScroll==='number'){window.scrollTo(0,d.umaScroll)}
+    if(d&&typeof d.nordalScroll==='number'){window.scrollTo(0,d.nordalScroll)}
   });
   function report(){
-    try{parent.postMessage({umaSize:{h:document.documentElement.scrollHeight,vh:window.innerHeight}},'*')}catch(e){}
+    try{parent.postMessage({nordalSize:{h:document.documentElement.scrollHeight,vh:window.innerHeight}},'*')}catch(e){}
   }
   window.addEventListener('load',function(){report();setTimeout(report,1200);setTimeout(report,3500)});
   window.addEventListener('resize',report);
